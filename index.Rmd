@@ -1,0 +1,32 @@
+---
+title: "Ch 10 test"
+author: "Sam"
+date: "5/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("exercise.R")
+```
+
+This is a test using baby name popularity over time. 
+
+The most popular name of 2013 was **`r most_popular_name_2013`**
+
+wow how cool
+
+there was also a function written to find the most popular name of any year, 
+below is an example of that function with the year 2000
+
+``` {r test, echo = FALSE}
+most_popular_in_year_2000 = most_popular_in_year(2000)
+print(most_popular_in_year_2000)
+```
+
+below is another function that did things
+
+``` {r another_test, echo = FALSE}
+n = number_in_million("Laura", 2013)
+print(n)
+```
